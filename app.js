@@ -296,4 +296,17 @@ console.log(document.querySelector('#title'));
 // Second way of accessing an element
 console.log(document.getElementById('title'));
 
-document.querySelector('#title').innerHTML = 'Frontend Simplified'
+
+// Change HTML
+document.querySelector('#title').innerHTML += 'Frontend Simplified'
+
+// Change CSS
+document.querySelector('#title').style.fontSize = '64px'
+
+function changeTitleToRed() {
+    document.querySelector('#title').style.color = 'red'
+}
+
+function toggleDarkMode() {
+    document.querySelector('body').classList.toggle('dark-theme')
+}
